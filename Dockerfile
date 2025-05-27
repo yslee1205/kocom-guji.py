@@ -9,7 +9,7 @@ COPY run.sh kocom.conf kocom.py /
 RUN python3 -m pip install pyserial
 #RUN python3 -m pip install paho-mqtt
 RUN python3 -m pip install typing_extensions
-RUN python3 -m pip install paho-mqtt<2.0.0
+RUN python3 -m pip install "paho-mqtt<2.0.0"
 
 WORKDIR /share
 
